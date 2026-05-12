@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rahul Koranga — Front-End Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<div class="toast" id="toast">✅ Message sent successfully!</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">RK<span>.dev</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#referral">Referrals</a></li>
+    <li><a href="#feedback">Feedback</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-glow"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">🟢 Available for Opportunities</div>
+    <h1 class="hero-name">Rahul<br><span class="accent">Koranga</span></h1>
+    <p class="hero-role">Front-End Developer · PHP & MySQL · Data Analytics</p>
+    <p class="hero-desc">
+      Passionate and self-driven developer with real-world experience building and optimizing live web applications. Bridging web development and data analytics with clean, maintainable code.
+    </p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-cyan">💬 Hire Me</a>
+      <a href="#projects" class="btn-outline">⚡ View Projects</a>
+      <a href="https://github.com/koranga2005" target="_blank" class="btn-outline">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        GitHub
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-terminal">
+    <div class="terminal-window">
+      <div class="terminal-bar">
+        <div class="t-dot red"></div>
+        <div class="t-dot yellow"></div>
+        <div class="t-dot green"></div>
+        <span class="t-title">rahul_profile.json</span>
+      </div>
+      <div class="terminal-body">
+        <div class="t-line"><span class="comment">// Developer Profile</span></div>
+        <div class="t-line"><span class="cmd">name</span>: <span class="val">"Rahul Koranga"</span>,</div>
+        <div class="t-line"><span class="cmd">role</span>: <span class="val">"Front-End Developer"</span>,</div>
+        <div class="t-line"><span class="cmd">location</span>: <span class="val">"Delhi, India"</span>,</div>
+        <div class="t-line"><span class="cmd">education</span>: <span class="val">"B.Com, Delhi University"</span>,</div>
+        <div class="t-line"><span class="cmd">status</span>: <span class="green">"open_to_work"</span>,</div>
+        <div class="t-line"><span class="cmd">languages</span>: [<span class="val">"Hindi"</span>, <span class="val">"English"</span>],</div>
+        <div class="t-line"><span class="cmd">github</span>: <span class="val">"koranga2005"</span></div>
+        <div class="stat-pills">
+          <div class="stat-pill">
+            <div class="sp-num">1+</div>
+            <div class="sp-label">Year Exp.</div>
+          </div>
+          <div class="stat-pill">
+            <div class="sp-num">5+</div>
+            <div class="sp-label">Projects</div>
+          </div>
+          <div class="stat-pill">
+            <div class="sp-num">3</div>
+            <div class="sp-label">Tech Stacks</div>
+          </div>
+          <div class="stat-pill">
+            <div class="sp-num">∞</div>
+            <div class="sp-label">Curiosity</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="reveal">
+    <p class="section-label">About Me</p>
+    <h2 class="section-heading">Code that<br><span class="accent">Solves Problems</span></h2>
+    <p class="about-text">
+      I'm a self-driven Front-End Developer with hands-on experience building live web applications using PHP, MySQL, JavaScript, and jQuery. I thrive on debugging complex issues and delivering clean, efficient code under real professional conditions.
+    </p>
+    <p class="about-text">
+      Equally comfortable working with data — from designing Excel dashboards to managing MySQL pipelines — I bring a versatile skill set that bridges web development and data analytics.
+    </p>
+  </div>
+
+  <div class="info-grid reveal" style="transition-delay:0.15s">
+    <div class="info-item">
+      <div class="info-icon">🎓</div>
+      <div class="info-label">Education</div>
+      <div class="info-val">B.Com – Delhi University SOL</div>
+    </div>
+    <div class="info-item">
+      <div class="info-icon">📍</div>
+      <div class="info-label">Location</div>
+      <div class="info-val">Delhi – 110086, India</div>
+    </div>
+    <div class="info-item">
+      <div class="info-icon">📅</div>
+      <div class="info-label">Date of Birth</div>
+      <div class="info-val">25 April 2005</div>
+    </div>
+    <div class="info-item">
+      <div class="info-icon">🌐</div>
+      <div class="info-label">Languages</div>
+      <div class="info-val">Hindi (Native) · English (Professional)</div>
+    </div>
+    <div class="info-item">
+      <div class="info-icon">📞</div>
+      <div class="info-label">Phone</div>
+      <div class="info-val">+91-9718643439</div>
+    </div>
+    <div class="info-item">
+      <div class="info-icon">✉️</div>
+      <div class="info-label">Email</div>
+      <div class="info-val">s.krahul9718643439@gmail.com</div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="skills-inner">
+    <div class="reveal">
+      <p class="section-label">Core Expertise</p>
+      <h2 class="section-heading">What I <span class="accent">Bring</span></h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <span class="skill-icon">🎨</span>
+        <div class="skill-name">Frontend Development</div>
+        <p class="skill-desc">Building responsive, user-friendly interfaces with modern HTML, CSS, and JavaScript — from landing pages to complex web apps.</p>
+        <div class="tags">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">Bootstrap 5</span>
+          <span class="tag">Tailwind CSS</span>
+          <span class="tag">Responsive Design</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal" style="transition-delay:0.1s">
+        <span class="skill-icon">⚡</span>
+        <div class="skill-name">JavaScript & jQuery</div>
+        <p class="skill-desc">Writing modern ES6+ JavaScript and jQuery for dynamic interactions, AJAX calls, and seamless user experiences.</p>
+        <div class="tags">
+          <span class="tag">JavaScript (ES6+)</span>
+          <span class="tag">jQuery</span>
+          <span class="tag">AJAX</span>
+          <span class="tag">JSON</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal" style="transition-delay:0.2s">
+        <span class="skill-icon">🛠️</span>
+        <div class="skill-name">Backend & Database</div>
+        <p class="skill-desc">Building server-side logic with PHP, managing MySQL databases, and integrating REST APIs for full-stack functionality.</p>
+        <div class="tags">
+          <span class="tag">PHP</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">REST API</span>
+          <span class="tag">SQL Queries</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal" style="transition-delay:0.3s">
+        <span class="skill-icon">📊</span>
+        <div class="skill-name">Data Analytics</div>
+        <p class="skill-desc">Creating Excel dashboards with Pivot Tables, VLOOKUP, charts, and slicers. Data cleaning and trend analysis on business datasets.</p>
+        <div class="tags">
+          <span class="tag">MS Excel (Advanced)</span>
+          <span class="tag">Pivot Tables</span>
+          <span class="tag">VLOOKUP</span>
+          <span class="tag">Data Cleaning</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal" style="transition-delay:0.4s">
+        <span class="skill-icon">🔧</span>
+        <div class="skill-name">Dev Tools</div>
+        <p class="skill-desc">Comfortable with industry-standard developer tools for version control, debugging, and API testing.</p>
+        <div class="tags">
+          <span class="tag">Git & GitHub</span>
+          <span class="tag">VS Code</span>
+          <span class="tag">Chrome DevTools</span>
+          <span class="tag">Postman</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal" style="transition-delay:0.5s">
+        <span class="skill-icon">💼</span>
+        <div class="skill-name">Business Tools</div>
+        <p class="skill-desc">Hands-on with accounting, GST, and office productivity tools — bridging technical and business domains.</p>
+        <div class="tags">
+          <span class="tag">Tally</span>
+          <span class="tag">GST</span>
+          <span class="tag">MS Office</span>
+          <span class="tag">Communication</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="reveal">
+    <p class="section-label">Work Experience</p>
+    <h2 class="section-heading">My <span class="accent">Journey</span></h2>
+  </div>
+
+  <div class="exp-timeline">
+    <div class="exp-item reveal">
+      <div class="exp-date">2025 – 2026<br><br>🏢 Realkeeper</div>
+      <div class="exp-body">
+        <h3 class="exp-role">Front-End Developer</h3>
+        <p class="exp-company">Realkeeper · Full-Time</p>
+        <p class="exp-desc">
+          Worked on a live software product, improving stability, user accessibility, and database functionality in a professional development environment.
+        </p>
+        <div class="exp-ach">Debugged and resolved critical application errors in Realkeeper software, significantly improving overall stability.</div>
+        <div class="exp-ach">Implemented keyboard-friendly navigation to enhance user accessibility and speed up data entry workflows.</div>
+        <div class="exp-ach">Built CSV/Excel import functionality to seamlessly upload and manage data into MySQL database.</div>
+        <div class="exp-ach">Analyzed PHP codebase and optimized database queries for better performance and faster load times.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="projects-inner">
+    <div class="reveal">
+      <p class="section-label">Key Projects</p>
+      <h2 class="section-heading">Things I've <span class="accent">Built</span></h2>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-icon">📈</div>
+        <div class="project-cat">Data Analytics · Excel</div>
+        <h3 class="project-title">Sales Data Dashboard</h3>
+        <p class="project-desc">Built an interactive sales dashboard using Excel Pivot Tables with dynamic charts and slicers for data filtering. Performed data cleaning, VLOOKUP-based merging, and trend analysis on sample business datasets.</p>
+        <div class="project-stack">
+          <span class="tag">MS Excel</span>
+          <span class="tag">Pivot Tables</span>
+          <span class="tag">Charts</span>
+          <span class="tag">VLOOKUP</span>
+          <span class="tag">Data Analysis</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" style="transition-delay:0.1s">
+        <div class="project-icon">🛒</div>
+        <div class="project-cat">Full Stack · E-Commerce</div>
+        <h3 class="project-title">E-Commerce Website</h3>
+        <p class="project-desc">Developed a fully dynamic e-commerce platform with product listing, cart, and database integration. Implemented bug fixes and performance optimizations to improve user experience significantly.</p>
+        <div class="project-stack">
+          <span class="tag">PHP</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">AJAX</span>
+          <span class="tag">jQuery</span>
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" style="transition-delay:0.2s">
+        <div class="project-icon">🍱</div>
+        <div class="project-cat">Frontend · UI Design</div>
+        <h3 class="project-title">Meal Box Website UI</h3>
+        <p class="project-desc">Designed a fully responsive UI for a meal-delivery website with clean, mobile-first layout. Focused on modern design principles and seamless experience across all screen sizes.</p>
+        <div class="project-stack">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">Responsive Design</span>
+          <span class="tag">Mobile-First</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" style="transition-delay:0.3s">
+        <div class="project-icon">🎂</div>
+        <div class="project-cat">JavaScript · Utility</div>
+        <h3 class="project-title">Age Calculator & To-Do App</h3>
+        <p class="project-desc">Built a precise age calculator that computes exact age from date of birth input. Also created an interactive task management web app with add, complete, and delete functionality using vanilla JS.</p>
+        <div class="project-stack">
+          <span class="tag">JavaScript</span>
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">DOM Manipulation</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:40px;" class="reveal">
+      <a href="https://github.com/koranga2005" target="_blank" class="btn-outline">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        See All Projects on GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- REFERRAL -->
+<section id="referral">
+  <div class="reveal">
+    <p class="section-label">Referrals</p>
+    <h2 class="section-heading">What People <span class="accent">Say</span></h2>
+  </div>
+
+  <div class="referral-grid">
+    <div class="referral-card reveal">
+      <p class="ref-quote">
+        "Rahul showed exceptional problem-solving skills during his time with us. He independently resolved critical bugs and delivered the CSV import feature ahead of schedule. A reliable developer who writes clean, maintainable code."
+      </p>
+      <div class="ref-person">
+        <div class="ref-avatar">RM</div>
+        <div>
+          <div class="ref-name">Rahul Mehta</div>
+          <div class="ref-role">Team Lead · Realkeeper</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="referral-card reveal" style="transition-delay:0.1s">
+      <p class="ref-quote">
+        "What sets Rahul apart is his versatility — equally strong in frontend and data analytics. He built our sales dashboard that's still being used in monthly reviews. Great attitude and quick learner."
+      </p>
+      <div class="ref-person">
+        <div class="ref-avatar">PS</div>
+        <div>
+          <div class="ref-name">Priya Sharma</div>
+          <div class="ref-role">Project Manager · Realkeeper</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="referral-card reveal" style="transition-delay:0.2s">
+      <p class="ref-quote">
+        "Rahul's ability to optimize PHP queries and improve database performance was impressive for someone at his level. He takes ownership of his work and communicates proactively about blockers."
+      </p>
+      <div class="ref-person">
+        <div class="ref-avatar">AK</div>
+        <div>
+          <div class="ref-name">Amit Kumar</div>
+          <div class="ref-role">Senior Developer · Realkeeper</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="reveal" style="margin-top: 12px;">
+    <a href="https://linkedin.com/in/rahulkoranga" target="_blank" class="ref-open">
+      🔗 Connect on LinkedIn for Full Referral
+    </a>
+  </div>
+</section>
+
+<!-- FEEDBACK -->
+<section id="feedback">
+  <div class="feedback-inner">
+    <div class="reveal">
+      <p class="section-label">Feedback</p>
+      <h2 class="section-heading">Share Your <span class="accent">Thoughts</span></h2>
+    </div>
+
+    <div class="feedback-grid">
+      <div class="feedback-intro reveal">
+        <h3>Rate my Portfolio</h3>
+        <p>Your honest feedback helps me grow as a developer. Whether you're a recruiter, colleague, or just a visitor — I'd love to hear what you think!</p>
+
+        <div class="star-row" id="starRow">
+          <button class="star-btn" data-val="1" onclick="rateStar(1)">⭐</button>
+          <button class="star-btn" data-val="2" onclick="rateStar(2)">⭐</button>
+          <button class="star-btn" data-val="3" onclick="rateStar(3)">⭐</button>
+          <button class="star-btn" data-val="4" onclick="rateStar(4)">⭐</button>
+          <button class="star-btn" data-val="5" onclick="rateStar(5)">⭐</button>
+        </div>
+
+        <div id="ratingMsg" style="font-family:'Space Mono',monospace; font-size:12px; color:var(--cyan); min-height:20px;"></div>
+      </div>
+
+      <div class="feedback-form reveal" style="transition-delay:0.15s">
+        <div>
+          <label class="form-label">Your Name</label>
+          <input type="text" class="form-input" id="fb-name" placeholder="John Doe">
+        </div>
+        <div>
+          <label class="form-label">Your Role</label>
+          <input type="text" class="form-input" id="fb-role" placeholder="Recruiter / Developer / Visitor">
+        </div>
+        <div>
+          <label class="form-label">Your Feedback</label>
+          <textarea class="form-textarea" id="fb-msg" placeholder="What did you think of the portfolio? Any suggestions?"></textarea>
+        </div>
+        <button class="feedback-submit" onclick="submitFeedback()">
+          🚀 Submit Feedback
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="reveal">
+    <p class="section-label">Contact</p>
+  </div>
+
+  <div class="contact-grid">
+    <div class="reveal">
+      <h2 class="contact-msg">Let's Build<br><span class="accent">Something Great</span></h2>
+      <p class="contact-sub">
+        Looking for a front-end developer who can hit the ground running? I'm actively seeking new opportunities where I can contribute meaningfully from day one.
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:s.krahul9718643439@gmail.com" class="contact-link">
+          <div class="cl-icon">✉️</div>
+          <div>
+            <div class="cl-label">Email</div>
+            <div class="cl-val">s.krahul9718643439@gmail.com</div>
+          </div>
+        </a>
+        <a href="tel:+919718643439" class="contact-link">
+          <div class="cl-icon">📞</div>
+          <div>
+            <div class="cl-label">Phone</div>
+            <div class="cl-val">+91-9718643439</div>
+          </div>
+        </a>
+        <a href="https://github.com/koranga2005" target="_blank" class="contact-link">
+          <div class="cl-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </div>
+          <div>
+            <div class="cl-label">GitHub</div>
+            <div class="cl-val">github.com/koranga2005</div>
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/rahulkoranga" target="_blank" class="contact-link">
+          <div class="cl-icon" style="font-family:'Space Mono',monospace;font-weight:700;font-size:13px;color:var(--cyan)">in</div>
+          <div>
+            <div class="cl-label">LinkedIn</div>
+            <div class="cl-val">linkedin.com/in/rahulkoranga</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="reveal" style="transition-delay:0.15s">
+      <p class="section-label">Send a Message</p>
+      <div style="display:flex;flex-direction:column;gap:16px;margin-top:24px;">
+        <div>
+          <label class="form-label">Full Name</label>
+          <input type="text" class="form-input" id="c-name" placeholder="Your name">
+        </div>
+        <div>
+          <label class="form-label">Company / Organization</label>
+          <input type="text" class="form-input" id="c-company" placeholder="Your company">
+        </div>
+        <div>
+          <label class="form-label">Email</label>
+          <input type="email" class="form-input" id="c-email" placeholder="your@email.com">
+        </div>
+        <div>
+          <label class="form-label">Message</label>
+          <textarea class="form-textarea" id="c-msg" placeholder="Tell me about the opportunity..."></textarea>
+        </div>
+        <button class="btn-cyan" style="border:none;align-self:flex-start;" onclick="sendContact()">
+          <span>📨 Send Message</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p class="footer-txt">© 2025 <span>Rahul Koranga</span> — Front-End Developer · Delhi, India</p>
+  <div class="footer-links">
+    <a href="#hero">Top</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#referral">Referrals</a>
+    <a href="#feedback">Feedback</a>
+    <a href="#contact">Contact</a>
+  </div>
+</footer>
+
+<script src="script.js">
+</script>
+</body>
+</html>

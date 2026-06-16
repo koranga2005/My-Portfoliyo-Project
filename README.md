@@ -30,3 +30,4 @@ Integrate real-world data analytics projects
 Improve accessibility and performance optimization
 Include a downloadable resume feature
 Expand the project showcase section with detailed case studies
+
